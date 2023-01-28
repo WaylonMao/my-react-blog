@@ -1,9 +1,20 @@
 import React, { Component } from 'react';
-import style from './style.css';
+import './style.css';
+
+import Header from '../../components/Header/Header';
+import Menus from '../../components/Menu/Menus';
 
 class Home extends Component {
   render() {
-    return <h1>Weilong's Blog</h1>;
+    return (
+      <div className='container'>
+        <Header />
+        <div className='nav'>
+          <Menus />
+        </div>
+        <div className='main'>List</div>
+      </div>
+    );
   }
 }
 

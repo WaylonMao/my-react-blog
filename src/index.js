@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'antd/dist/reset.css';
 import './index.css';
-import Home from './containers/Home/Home';
+import Router from './containers/Router';
 
-ReactDOM.render(<Home />, document.getElementById('root'));
+ReactDOM.render(<Router />, document.getElementById('root'));

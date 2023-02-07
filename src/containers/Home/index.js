@@ -3,16 +3,20 @@ import './style.css';
 
 import Header from '../../components/Header/Header';
 import Menus from '../../components/Menu/Menus';
+import ArticleList from '../../components/ArticleList/ArticleList';
 
 class Home extends Component {
   render() {
+    const { tags } = this.props;
     return (
-      <div className='container'>
+      <div className='h_container'>
         <Header />
         <div className='nav'>
           <Menus />
         </div>
-        <div className='main'>List</div>
+        <div className='main'>
+          <ArticleList history={this.props.history} tags={tags} />
+        </div>
       </div>
     );
   }
